@@ -85,9 +85,8 @@ curl -u "xiaohu-liu:cloudera" -XPOST 'http://localhost:7180/api/v12/clusters/xia
   "canRetry" : false
 }
 ```
-
-```
 ### curl statement that start Hive service
+```
 [root@ip-172-31-7-188 tmp]# curl -u "xiaohu-liu:cloudera" -XPOST 'http://localhost:7180/api/v12/clusters/xiaohu-liu/services/hive/commands/start'
 {
   "id" : 698,
@@ -134,34 +133,4 @@ curl -u "xiaohu-liu:cloudera" -XPOST 'http://localhost:7180/api/v12/clusters/xia
   "displayName" : "Hive",
   "entityStatus" : "GOOD_HEALTH"
 }
-```[root@ip-172-31-7-188 tmp]# curl -u "xiaohu-liu:cloudera"  'http://localhost:7180/api/v12/clusters/xiaohu-liu/services/hive'
-{
-  "name" : "hive",
-  "type" : "HIVE",
-  "clusterRef" : {
-    "clusterName" : "cluster"
-  },
-  "serviceUrl" : "http://ip-172-31-7-188:7180/cmf/serviceRedirect/hive",
-  "roleInstancesUrl" : "http://ip-172-31-7-188:7180/cmf/serviceRedirect/hive/instances",
-  "serviceState" : "STARTED",
-  "healthSummary" : "GOOD",
-  "healthChecks" : [ {
-    "name" : "HIVE_HIVEMETASTORES_HEALTHY",
-    "summary" : "GOOD",
-    "suppressed" : false
-  }, {
-    "name" : "HIVE_HIVESERVER2S_HEALTHY",
-    "summary" : "GOOD",
-    "suppressed" : false
-  }, {
-    "name" : "HIVE_WEBHCATS_HEALTHY",
-    "summary" : "GOOD",
-    "suppressed" : false
-  } ],
-  "configStalenessStatus" : "FRESH",
-  "clientConfigStalenessStatus" : "STALE",
-  "maintenanceMode" : false,
-  "maintenanceOwners" : [ ],
-  "displayName" : "Hive",
-  "entityStatus" : "GOOD_HEALTH"
-}
+```
