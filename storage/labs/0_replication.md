@@ -78,7 +78,7 @@ commands and output here:
 ```
 [hdfs@ip-172-31-7-188 root]$ hdfs fsck /user/xiaohu-liu/source -files -blocks
 Connecting to namenode via http://ip-172-31-0-239:50070
-FSCK started by hdfs (auth:KERBEROS_SSL) from /172.31.7.188 for path /user/xiaohu-liu/source at Wed May 10 15:12:09 UTC 2017
+FSCK started by hdfs (auth:SIMPLE) from /172.31.7.188 for path /user/xiaohu-liu/source at Wed May 10 15:12:09 UTC 2017
 /user/xiaohu-liu/source <dir>
 /user/xiaohu-liu/source/_SUCCESS 0 bytes, 0 block(s):  OK
 
