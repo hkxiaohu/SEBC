@@ -17,9 +17,3 @@
  }
 
 ```
-
-### /var/kerberos/krb5kdc/kadm5.acl
-```
-*/admin@XIAOHU-LIU.CN *
-cloudera-scm@XIAOHU-LIU.CN admilc
-```
